@@ -24,9 +24,9 @@ def divide(x, y):
 def power(x, y):
     return x ** y
 
-# This function divides a number, but leaves the result integer and approximate
+# This function does roof division
 # Essa função faz a divisão com resto, mas não o exibe
-def divideaprox(x, y):
+def roofdivide(x, y):
     return x // y
 
 print("Select operation.")
@@ -35,7 +35,7 @@ print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
 print("5.Power")
-print("6.Aproximated division")
+print("6.Roof divide")
 
 while True:
     # Take input from the user
@@ -66,7 +66,7 @@ while True:
             print(num1, "**", num2, "=", power(num1, num2))
 
         elif choice == '6':
-            print(num1, "//", num2, "=", divideaprox(num1, num2))
+            print(num1, "//", num2, "=", roofdivide(num1, num2))
         
         # Check if user wants another calculation
         # Confirma se o usuário quer fazer outro cálculo
